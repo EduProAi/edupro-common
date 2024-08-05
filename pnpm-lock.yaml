@@ -11,9 +11,9 @@ importers:
       js-yaml:
         specifier: ^4.1.0
         version: 4.1.0
-      tiktoken-node:
-        specifier: ^0.0.7
-        version: 0.0.7
+      tiktoken:
+        specifier: ^1.0.15
+        version: 1.0.15
       uuid:
         specifier: ^10.0.0
         version: 10.0.0
@@ -50,9 +50,8 @@ packages:
   module-alias@2.2.3:
     resolution: {integrity: sha512-23g5BFj4zdQL/b6tor7Ji+QY4pEfNH784BMslY9Qb0UnJWRAt+lQGLYmRaM0KDBwIG23ffEBELhZDP2rhi9f/Q==}
 
-  tiktoken-node@0.0.7:
-    resolution: {integrity: sha512-eYtUh1jDLl7TXLj7HXujP+3IPkDieMl1G1HUsG52rysc91YoNw9IIeR4kNoISsc29mk+JDKQ7jEVRN07VOzaDQ==}
-    engines: {node: '>= 14'}
+  tiktoken@1.0.15:
+    resolution: {integrity: sha512-sCsrq/vMWUSEW29CJLNmPvWxlVp7yh2tlkAjpJltIKqp5CKf98ZNpdeHRmAlPVFlGEbswDc6SmI8vz64W/qErw==}
 
   uuid@10.0.0:
     resolution: {integrity: sha512-8XkAphELsDnEGrDxUOHB3RGvXz6TeuYSGEZBOjtTtPm2lwhGBjLgOzLHB63IUWfBpNucQjND6d3AOudO+H3RWQ==}
@@ -76,6 +75,6 @@ snapshots:
 
   module-alias@2.2.3: {}
 
-  tiktoken-node@0.0.7: {}
+  tiktoken@1.0.15: {}
 
   uuid@10.0.0: {}

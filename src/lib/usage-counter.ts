@@ -1,4 +1,4 @@
-import { getEncoding } from "tiktoken-node";
+import { get_encoding } from "tiktoken";
 
 type ChatCompletionMessageParam = {
   role: "user" | "assistant" | "system";
@@ -29,7 +29,7 @@ export class UsageCounter {
   }
 
   static countTokens(text: string) {
-    const tokenEncoding = getEncoding("cl100k_base");
+    const tokenEncoding = get_encoding("cl100k_base");
     return tokenEncoding.encode(text).length;
   }
 
