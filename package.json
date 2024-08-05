@@ -17,12 +17,12 @@
   },
   "homepage": "https://github.com/EduProAi/edupro-common#readme",
   "dependencies": {
+    "@edupro/types": "github:EduProAi/edupro-types",
     "js-tiktoken": "^1.0.12",
     "js-yaml": "^4.1.0",
     "uuid": "^10.0.0"
   },
   "devDependencies": {
-    "@edupro/types": "github:EduProAi/edupro-types",
     "@types/js-yaml": "^4.0.9",
     "@types/uuid": "^10.0.0"
   }
