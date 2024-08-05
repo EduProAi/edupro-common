@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.UsageCounter = void 0;
-var tiktoken_1 = require("tiktoken");
+var js_tiktoken_1 = require("js-tiktoken");
 var UsageCounter = /** @class */ (function () {
     function UsageCounter() {
     }
@@ -22,7 +22,7 @@ var UsageCounter = /** @class */ (function () {
         return chineseWordCount + englishWordCount;
     };
     UsageCounter.countTokens = function (text) {
-        var tokenEncoding = (0, tiktoken_1.get_encoding)("cl100k_base");
+        var tokenEncoding = (0, js_tiktoken_1.getEncoding)("cl100k_base");
         return tokenEncoding.encode(text).length;
     };
     UsageCounter.countPromptMessagesTokens = function (messages) {

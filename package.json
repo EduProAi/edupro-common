@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/EduProAi/edupro-common#readme",
   "dependencies": {
+    "js-tiktoken": "^1.0.12",
     "js-yaml": "^4.1.0",
-    "tiktoken": "^1.0.15",
     "uuid": "^10.0.0"
   },
   "devDependencies": {
