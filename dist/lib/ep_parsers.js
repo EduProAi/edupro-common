@@ -1,12 +1,8 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.sortSmSchoolDegrees = exports.parseSmSchoolDegree = exports.parseSmSchoolCountryCode = exports.parseSmSchoolCampusSetting = exports.parseSmSchoolType = exports.parseFeatureHandle = exports.parsePricingPlanCycle = exports.parseOrderStatus = exports.parseOrderType = exports.PlotParser = exports.clientNameParser = exports.parseClientContactInfoType = exports.parseEduLevelRank = exports.parseAwardScope = exports.parseClientAttributeType = exports.parseEducationLevelColor = exports.parseEducationLevel = exports.parseMaritalStatus = exports.parseGender = void 0;
 var types_1 = require("@edupro/types");
 var uuid_1 = require("uuid");
-var js_yaml_1 = __importDefault(require("js-yaml"));
 var parseGender = function (gender, defaultValue) {
     if (gender === void 0) { gender = undefined; }
     switch (gender) {
@@ -169,21 +165,6 @@ var PlotParser = /** @class */ (function () {
     function PlotParser() {
     }
     PlotParser.parsePlots = function (plotString) {
-        try {
-            var parseResult = js_yaml_1.default.load(plotString);
-            // check if parsedPlots is array
-            if (Array.isArray(parseResult) &&
-                parseResult.every(function (p) { return typeof p === "string"; })) {
-                return parseResult.map(function (p) { return ({
-                    plot: p,
-                    uuid: (0, uuid_1.v4)(),
-                    editable: false,
-                }); });
-            }
-        }
-        catch (err) {
-            console.log(err);
-        }
         return plotString
             .split(/\n+/)
             .filter(function (p) { return p.trim(); })

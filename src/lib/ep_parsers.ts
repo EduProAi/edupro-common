@@ -178,23 +178,6 @@ export const clientNameParser = (client?: Partial<Client>) => {
 
 export class PlotParser {
   static parsePlots(plotString: string): ParsedPlot[] {
-    try {
-      const parseResult = yaml.load(plotString);
-      // check if parsedPlots is array
-      if (
-        Array.isArray(parseResult) &&
-        parseResult.every((p: unknown) => typeof p === "string")
-      ) {
-        return parseResult.map((p: string) => ({
-          plot: p,
-          uuid: uuidv4(),
-          editable: false,
-        }));
-      }
-    } catch (err) {
-      console.log(err);
-    }
-
     return plotString
       .split(/\n+/)
       .filter((p) => p.trim())
