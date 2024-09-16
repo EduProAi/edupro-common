@@ -15,6 +15,7 @@ __metadata:
     js-tiktoken: "npm:^1.0.12"
     js-yaml: "npm:^4.1.0"
     uuid: "npm:^10.0.0"
+    words-count: "npm:^2.0.2"
   languageName: unknown
   linkType: soft
 
@@ -88,5 +89,12 @@ __metadata:
   bin:
     uuid: dist/bin/uuid
   checksum: 10c0/eab18c27fe4ab9fb9709a5d5f40119b45f2ec8314f8d4cf12ce27e4c6f4ffa4a6321dc7db6c515068fa373c075b49691ba969f0010bf37f44c37ca40cd6bf7fe
+  languageName: node
+  linkType: hard
+
+"words-count@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "words-count@npm:2.0.2"
+  checksum: 10c0/e8a7aab1a6558761fdeb41ddf76ef184c55bbb7a53794e75d80b760ef175e9c31f739ec45bb468d7a818cfcceee1768e637d0f896024fff9953f0aba2b42c544
   languageName: node
   linkType: hard

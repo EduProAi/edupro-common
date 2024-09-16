@@ -20,7 +20,8 @@
     "@edupro/types": "github:EduProAi/edupro-types",
     "js-tiktoken": "^1.0.12",
     "js-yaml": "^4.1.0",
-    "uuid": "^10.0.0"
+    "uuid": "^10.0.0",
+    "words-count": "^2.0.2"
   },
   "devDependencies": {
     "@types/js-yaml": "^4.0.9",
