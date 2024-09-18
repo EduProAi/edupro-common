@@ -9,7 +9,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@edupro/common@workspace:."
   dependencies:
-    "@edupro/types": "github:EduProAi/edupro-types"
+    "@edupro/types": "https://github.com/EduProAi/edupro-types"
     "@types/js-yaml": "npm:^4.0.9"
     "@types/uuid": "npm:^10.0.0"
     js-tiktoken: "npm:^1.0.12"
@@ -19,12 +19,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@edupro/types@github:EduProAi/edupro-types":
+"@edupro/types@https://github.com/EduProAi/edupro-types":
   version: 2.0.0
-  resolution: "@edupro/types@https://github.com/EduProAi/edupro-types.git#commit=41134df94d590ff787a18e7a99c5ef6b4700fd38"
+  resolution: "@edupro/types@https://github.com/EduProAi/edupro-types.git#commit=90e6239a709c939757a6c6d1789f2599419f1801"
   dependencies:
     module-alias: "npm:^2.2.3"
-  checksum: 10c0/68ba25e6dde854a8630ec1a44ab0984119f8531a8d82029c5776a32b3a59ac2f0814b86d563d3074c0cfbb219a8b7ddf75bf6f4e69e226e6394f4338eb4ab43f
+  checksum: 10c0/8973c63ccff4b81574ceef6bd236e20d0e179031059b9999bf293462bc07a7e0a6fa81d97c11755e4255b32ea737b268c3c5b3573c4bef74dce26c2bbeeeb418
   languageName: node
   linkType: hard
 
