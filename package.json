@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/EduProAi/edupro-common#readme",
   "dependencies": {
-    "@edupro/types": "github:EduProAi/edupro-types",
+    "@edupro/types": "https://github.com/EduProAi/edupro-types",
     "js-tiktoken": "^1.0.12",
     "js-yaml": "^4.1.0",
     "uuid": "^10.0.0",
