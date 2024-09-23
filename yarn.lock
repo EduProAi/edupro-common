@@ -5,11 +5,10 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"@edupro/common@workspace:.":
+"@eduproai/common@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@edupro/common@workspace:."
+  resolution: "@eduproai/common@workspace:."
   dependencies:
-    "@edupro/types": "https://github.com/EduProAi/edupro-types"
     "@types/js-yaml": "npm:^4.0.9"
     "@types/uuid": "npm:^10.0.0"
     js-tiktoken: "npm:^1.0.12"
@@ -18,15 +17,6 @@ __metadata:
     words-count: "npm:^2.0.2"
   languageName: unknown
   linkType: soft
-
-"@edupro/types@https://github.com/EduProAi/edupro-types":
-  version: 2.0.0
-  resolution: "@edupro/types@https://github.com/EduProAi/edupro-types.git#commit=90e6239a709c939757a6c6d1789f2599419f1801"
-  dependencies:
-    module-alias: "npm:^2.2.3"
-  checksum: 10c0/8973c63ccff4b81574ceef6bd236e20d0e179031059b9999bf293462bc07a7e0a6fa81d97c11755e4255b32ea737b268c3c5b3573c4bef74dce26c2bbeeeb418
-  languageName: node
-  linkType: hard
 
 "@types/js-yaml@npm:^4.0.9":
   version: 4.0.9
@@ -73,13 +63,6 @@ __metadata:
   bin:
     js-yaml: bin/js-yaml.js
   checksum: 10c0/184a24b4eaacfce40ad9074c64fd42ac83cf74d8c8cd137718d456ced75051229e5061b8633c3366b8aada17945a7a356b337828c19da92b51ae62126575018f
-  languageName: node
-  linkType: hard
-
-"module-alias@npm:^2.2.3":
-  version: 2.2.3
-  resolution: "module-alias@npm:2.2.3"
-  checksum: 10c0/47dc5b6d04f6e7df0ff330ca9b2a37c688a682ed661e9432b0b327e1e6c43eedad052151b8d50d6beea8b924828d2a92fa4625c18d651bf2d93d8f03aa0172fa
   languageName: node
   linkType: hard
 

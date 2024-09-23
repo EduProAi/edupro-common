@@ -10,8 +10,8 @@ type ChatCompletionMessageParam = {
 export class UsageCounter {
   static countWords(text: string) {
     return wordsCount(text, {
-      punctuationAsBreaker: true,
-      punctuation: ["。", "！", "？"],
+      punctuationAsBreaker: false,
+      punctuation: ["。", "！", "？", "，", "；", "：", "、", "。", "！", "？", "，", "；", "：", "、", ",", ".", "!", "?", ","],
       disableDefaultPunctuation: false,
     });
   }

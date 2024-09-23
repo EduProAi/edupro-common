@@ -1,4 +1,4 @@
-import { Client, ClientAttributeType, MaritalStatus } from "@edupro/types";
+import { Client, ClientAttributeType, MaritalStatus } from "../models";
 type ParsedPlot = {
     plot: string;
     uuid: string;

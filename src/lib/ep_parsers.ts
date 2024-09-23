@@ -1,6 +1,5 @@
-import { Client, ClientAttributeType, MaritalStatus } from "@edupro/types";
+import { Client, ClientAttributeType, MaritalStatus } from "../models";
 import { v4 as uuidv4 } from "uuid";
-import yaml from "js-yaml";
 
 type ParsedPlot = {
   plot: string;

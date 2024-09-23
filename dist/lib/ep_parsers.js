@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.sortSmSchoolDegrees = exports.parseSmSchoolDegree = exports.parseSmSchoolCountryCode = exports.parseSmSchoolCampusSetting = exports.parseSmSchoolType = exports.parseFeatureHandle = exports.parsePricingPlanCycle = exports.parseOrderStatus = exports.parseOrderType = exports.PlotParser = exports.clientNameParser = exports.parseClientContactInfoType = exports.parseEduLevelRank = exports.parseAwardScope = exports.parseClientAttributeType = exports.parseEducationLevelColor = exports.parseEducationLevel = exports.parseMaritalStatus = exports.parseGender = void 0;
-var types_1 = require("@edupro/types");
+var models_1 = require("../models");
 var uuid_1 = require("uuid");
 var parseGender = function (gender, defaultValue) {
     if (gender === void 0) { gender = undefined; }
@@ -17,13 +17,13 @@ var parseGender = function (gender, defaultValue) {
 exports.parseGender = parseGender;
 var parseMaritalStatus = function (status) {
     switch (status) {
-        case types_1.MaritalStatus.single:
+        case models_1.MaritalStatus.single:
             return "单身";
-        case types_1.MaritalStatus.married:
+        case models_1.MaritalStatus.married:
             return "已婚";
-        case types_1.MaritalStatus.divorced:
+        case models_1.MaritalStatus.divorced:
             return "离异";
-        case types_1.MaritalStatus.widowed:
+        case models_1.MaritalStatus.widowed:
             return "丧偶";
         default:
             return "未知";
@@ -72,19 +72,19 @@ var parseClientAttributeType = function (type, lang) {
     if (lang === void 0) { lang = "zh"; }
     var isZh = lang === "zh";
     switch (type) {
-        case types_1.ClientAttributeType.AcademicAchievement:
+        case models_1.ClientAttributeType.AcademicAchievement:
             return isZh ? "学术成就" : "Academic Achievement";
-        case types_1.ClientAttributeType.ExtracurricularActivity:
+        case models_1.ClientAttributeType.ExtracurricularActivity:
             return isZh ? "课外活动" : "Extracurricular Activity";
-        case types_1.ClientAttributeType.PersonalInterestAndHobby:
+        case models_1.ClientAttributeType.PersonalInterestAndHobby:
             return isZh ? "个人兴趣和爱好" : "Personal Interest And Hobby";
-        case types_1.ClientAttributeType.CareerAspiration:
+        case models_1.ClientAttributeType.CareerAspiration:
             return isZh ? "职业抱负" : "Career Aspiration";
-        case types_1.ClientAttributeType.PersonalExperienceAndChallenge:
+        case models_1.ClientAttributeType.PersonalExperienceAndChallenge:
             return isZh ? "个人经验和挑战" : "Personal Experience And Challenge";
-        case types_1.ClientAttributeType.SkillAndQuality:
+        case models_1.ClientAttributeType.SkillAndQuality:
             return isZh ? "技能和素质" : "Skill And Quality";
-        case types_1.ClientAttributeType.PersonalGrowthAndDevelopment:
+        case models_1.ClientAttributeType.PersonalGrowthAndDevelopment:
             return isZh ? "个人成长和发展" : "Personal Growth And Development";
         default:
             return isZh ? "未知" : "Unknown";

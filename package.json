@@ -1,5 +1,5 @@
 {
-  "name": "@edupro/common",
+  "name": "@eduproai/common",
   "version": "1.0.1",
   "description": "common libs and features shared across edupro projects",
   "main": "dist/index.js",
@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/EduProAi/edupro-common#readme",
   "dependencies": {
-    "@edupro/types": "https://github.com/EduProAi/edupro-types",
     "js-tiktoken": "^1.0.12",
     "js-yaml": "^4.1.0",
     "uuid": "^10.0.0",

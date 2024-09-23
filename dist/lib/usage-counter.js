@@ -8,8 +8,8 @@ var UsageCounter = /** @class */ (function () {
     }
     UsageCounter.countWords = function (text) {
         return (0, words_count_1.wordsCount)(text, {
-            punctuationAsBreaker: true,
-            punctuation: ["。", "！", "？"],
+            punctuationAsBreaker: false,
+            punctuation: ["。", "！", "？", "，", "；", "：", "、", "。", "！", "？", "，", "；", "：", "、", ",", ".", "!", "?", ","],
             disableDefaultPunctuation: false,
         });
     };
