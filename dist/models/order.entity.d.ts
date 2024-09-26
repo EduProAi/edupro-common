@@ -34,4 +34,4 @@ export type OrderPayment = {
     total_amount: number;
     payment_time: Date;
 };
-export type PaymentMethod = "CASH_BALANCE" | "ALIPAY";
+export type PaymentMethod = "CASH_BALANCE" | "ALIPAY" | "STRIPE";
