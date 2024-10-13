@@ -1,3 +1,5 @@
+import { User } from "./user.entity";
+
 export type UserUsage = {
   id: string;
   user_id: string;
@@ -12,4 +14,6 @@ export type UserUsage = {
   output?: string;
   prompt?: string;
   input?: string;
+
+  user?: User;
 };
