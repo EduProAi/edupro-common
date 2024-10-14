@@ -40,3 +40,4 @@ __exportStar(require("./user-feature-quota.entity"), exports);
 __exportStar(require("./user-usage"), exports);
 __exportStar(require("./user.dto"), exports);
 __exportStar(require("./user.entity"), exports);
+__exportStar(require("./report.dto"), exports);

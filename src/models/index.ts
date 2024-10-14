@@ -24,3 +24,4 @@ export * from "./user-feature-quota.entity";
 export * from "./user-usage";
 export * from "./user.dto";
 export * from "./user.entity";
+export * from "./report.dto";
