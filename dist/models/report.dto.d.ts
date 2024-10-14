@@ -1,4 +1,4 @@
-export declare const ReportFilterDto: {
-    start_date: DateConstructor;
-    end_date: DateConstructor;
+export type ReportFilterDto = {
+    start_date: Date;
+    end_date: Date;
 };
