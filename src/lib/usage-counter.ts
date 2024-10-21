@@ -1,5 +1,5 @@
 import { getEncoding } from "js-tiktoken";
-import { wordsCount } from "words-count";
+import { WordCounter } from "./word-counter";
 
 type ChatCompletionMessageParam = {
   role: "user" | "assistant" | "system";
@@ -9,11 +9,7 @@ type ChatCompletionMessageParam = {
 
 export class UsageCounter {
   static countWords(text: string) {
-    return wordsCount(text, {
-      punctuationAsBreaker: false,
-      punctuation: ["。", "！", "？", "，", "；", "：", "、", "。", "！", "？", "，", "；", "：", "、", ",", ".", "!", "?", ","],
-      disableDefaultPunctuation: false,
-    });
+    return WordCounter.countWords(text);
   }
 
   static countTokens(text: string) {
